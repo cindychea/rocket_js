@@ -99,6 +99,11 @@ describe('Rocket', () => {
       expect(newRocket.sendCodedSignal(undefined)).toBe('boop');
     });
 
+    test('it should return boop if message code is not passed', () => {
+      const newRocket = new Rocket();
+      expect(newRocket.sendCodedSignal()).toBe('boop');
+    });
+
     test('it should set signalInfo to empty array and return nothing', () => {
       const newRocket = new Rocket()
       newRocket.sendCodedSignal(undefined)

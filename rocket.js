@@ -77,3 +77,6 @@ class Rocket {
 }
 
 module.exports = Rocket;
+
+const newRocket = new Rocket()
+console.log(newRocket.sendCodedSignal(''))
